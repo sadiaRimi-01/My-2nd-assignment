@@ -1,0 +1,123 @@
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* shared css style */
+.max-width {
+    max-width: 1140px;
+}
+.top-m{
+ margin-top: 50px;
+}
+
+/* Nav part */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1140px;
+    height: 82px;
+    margin: 50px 200px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 22px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    /* gap: 48px; */
+
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+/* Banner section */
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-weight: bold;
+    font-size: 3.75rem;
+}
+
+.banner-content {
+    text-align: left;
+    align-items: end;
+    gap: 10px;
+    width: 570px;
+    height: 299px;
+}
+
+.banner-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+
+.banner-img {
+    width: 570px;
+    height: 355px;
+}
+/* plants section */
+.plant-content{
+  text-align: center;
+  gap: 16px;
+ 
+}
+.plant-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.plant-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .hide {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 150px 5px 100px;
+        gap: auto;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+      
+    }
+}
