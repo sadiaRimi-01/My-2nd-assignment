@@ -2,14 +2,12 @@
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    */
 }
 
 /* shared css style */
-.max-width {
-    max-width: 1140px;
-}
-.top-m{
- margin-top: 50px;
+.dark-3 {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Nav part */
@@ -45,7 +43,7 @@ nav ul a {
 .banner {
     display: flex;
     justify-content: center;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -67,57 +65,236 @@ nav ul a {
     font-size: 1.5rem;
 }
 
-.banner-img {
-    width: 570px;
-    height: 355px;
-}
 /* plants section */
-.plant-content{
-  text-align: center;
-  gap: 16px;
- 
+.plant-content {
+    text-align: center;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 0 20px;
 }
-.plant-title{
+
+.plant-title {
     font-weight: bold;
     font-size: 3rem;
 }
-.plant-description{
+
+.plant-description {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
-   
+    font-weight: 400;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* gap: 20px; */
+
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: auto;
+}
+
+.flower {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* border: 2px solid tomato; */
+}
+
+.flower img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #FD6E0A;
+    font-weight: bold;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+
+/* plant lover section */
+
+
+
+.lover-section {
+    max-width: 1140px;
+    margin: 30px auto;
+
+}
+
+.love-content {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.shop {
+    display: flex;
+}
+
+.flex {
+    max-width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop img {
+    padding: 140px 0px 80px 0px;
+}
+
+.t-badge {
+    width: 280px;
+    height: 280px;
+    margin-left: -200px;
+    margin-top: -130px;
+}
+
+/* latest deals section */
+/* Section Styles */
+.deals-section {
+    max-width: 1140px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.deals-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.deals-title .highlight {
+    color: #fd6e0a;
+}
+
+.deals-subtitle {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.deals-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.deals-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Shared card style */
+.deal-box {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.deal-box.small {
+    flex: 1;
+    min-height: 200px;
+}
+
+.deal-box.large {
+    min-height: 420px;
+}
+
+.deal-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.deal-box a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 
 
+/* join section */
+.join {
+    background-image: url(../assets/news-letter-bg.png);
+    max-width: 1440px;
+    height: 533px;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+}
 
+.bunch {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 200px;
+}
 
+.email {
+    border: none;
+    display: flex;
+    justify-content: center;
+    grid-auto-flow: column;
 
+}
 
+.btn {
+    background-color: #FD6E0A;
+    font-weight: bold;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
 
+/* footer section */
+footer {
+    max-width: 1140px;
+    padding: 20px 60px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer li {
+    list-style: none;
+}
 
-
-
-
-
-
-
-
-@media screen and (max-width: 576px) {
-
-    .hide {
-        display: none;
-    }
-
-    nav {
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 150px 5px 100px;
-        gap: auto;
-    }
-    .banner{
-        flex-direction: column-reverse;
-        align-items: center;
-      
-    }
+.icons {
+    display: flex;
+    gap: 24px;
 }
