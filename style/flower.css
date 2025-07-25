@@ -458,14 +458,7 @@ footer {
     }
 
     /* Footer */
-    /* footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: left;
-        align-items:flex-start;
-        padding: 20px;
-        margin-left: 0px;
-    } */
+    
     footer {
         flex-direction: column;
         align-items: flex-start;
