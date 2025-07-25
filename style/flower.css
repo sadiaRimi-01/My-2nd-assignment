@@ -1,8 +1,9 @@
 .work-sans-font {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
-    */
+    
 }
 
 /* shared css style */
@@ -56,8 +57,8 @@ nav ul a {
     text-align: left;
     align-items: end;
     gap: 10px;
-    width: 570px;
-    height: 299px;
+    /* width: 570px;
+    height: 299px; */
 }
 
 .banner-description {
@@ -297,4 +298,128 @@ footer {
 .icons {
     display: flex;
     gap: 24px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  
+  .hide {
+    display: none;
+  }
+
+  nav {
+    flex-direction:row;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+    padding: 0;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+  /* banner section */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .banner-content{
+    width: 90%;
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+
+  /* Plant section responsive */
+  .image {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .flower {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* flower Lover section */
+  .flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .shop {
+    justify-content: center;
+  }
+
+  /* Deals section */
+  .deals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-box.small,
+  .deal-box.large {
+    min-height: 200px;
+  }
+
+  /* Join section */
+  .join {
+    padding: 20px;
+    height: auto;
+    background-size: cover;
+  }
+
+  .bunch {
+    font-size: 1.8rem;
+    padding-top: 80px;
+  }
+
+  .email {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .icons {
+    justify-content: center;
+  }
 }
