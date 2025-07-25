@@ -289,6 +289,9 @@ nav ul a {
 
 
 }
+.email input{
+    width: 300px;
+}
 
 .btn {
     background-color: #FD6E0A;
@@ -298,6 +301,7 @@ nav ul a {
     border-radius: 5px;
     font-size: 20px;
     border: none;
+    max-width: 200px;
 }
 
 /* footer section */
@@ -432,7 +436,10 @@ footer {
         padding: 20px;
         height: auto;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
+
 
     .bunch {
         font-size: 1.8rem;
@@ -453,7 +460,7 @@ footer {
 
     .btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 150px;
         margin: 0 auto;
     }
 
